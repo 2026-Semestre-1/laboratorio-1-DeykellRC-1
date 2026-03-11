@@ -52,11 +52,11 @@ def contadorDigitos(num, digito):
         return "Error: el valor de num debe ser entero"
     elif not isinstance(digito, int):
         return "Error: el valor de digito debe ser entero"
-    elif num < 0:
+    elif (num < 0):
         return "Error: el valor de num debe ser mayor a cero"
-    elif digito < 0:
+    elif (digito <= 0):
         return "Error: el valor de digito debe ser mayor a cero"
-    elif (digito > 10):
+    elif (digito >= 10):
         return "Error: el valor de digito debe ser menor a 10"
     return contadorDigitos_aux(num, digito)
 
@@ -93,35 +93,6 @@ Restricciones:todos los parametros deben ser de tipo entero
                 todo número dentro de la secuencia entre inicio y ** final** sea divisible
                 por esta excepcion debe omitirse en la suma
 """
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
