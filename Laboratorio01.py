@@ -95,6 +95,24 @@ Restricciones:todos los parametros deben ser de tipo entero
 """
 
 
+def contador_V2(inicio, fin, distancia, excepcion):
+    if not isinstance(inicio, int):
+        return "Error: el valor de inicio debe ser entero"
+    elif not isinstance(fin, int):
+        return "Error: el valor de fin debe ser entero"
+    elif not isinstance(distancia, int):
+        return "Error: el valor de distancia debe ser entero"
+    elif not isinstance(excepcion, int):
+        return "Error: el valor de excepcion debe ser entero"
+    if (inicio < 0):
+        return "Error: el valor de inicio debe ser mayor a cero"
+    if (fin < 0):
+        return "Error: el valor de fin debe ser mayor a cero"
+
+
+
+
+
 
 
 
